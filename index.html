@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js">
+    </script>
+
+    <title>Antony John</title>
+  </head>
+  <body>
+    <div>
+        <header class="jumbotron">
+            <h1 class="text-center display-4">I am a <span class="txt-rotate" data-period="2000" data-rotate='[ "post-graduate.","programmer."]'></span></h1>
+        </header>
+       
+        <div class="container" style="min-height: 100vh; position: relative;">
+            <div class="row justify-content-center"><h1 class="display-2 col-8 col-sm"></h1> </div>
+            <div class="row align-items-center" style="height: 100%;">
+                
+                <div class="col-12 col-sm-6">
+                    <div class="row" style="justify-content: center;">
+                        <div class="col-12">
+                            <figure>
+                                <img class=" img-fluid img-responsive me" src="D:/01.jpg" alt="Hmm. I usually show up here ">
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+                        <div class="row ">
+                            <div class="col-4">
+                                <a class="nolink" href="mailto:antonyjohn1010@gmail.com?subject=Lead%20from%20your%20site%20">
+                                    <img class="img-fluid " height="40" width="40" src="D:\project_images\gmail.png"></img>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="nolink" href="https://github.com/antonyjohn1997/">
+                                    <img class="img-fluid " height="40" width="40" src=" D:\project_images\github_image.png"></img>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="nolink" href="https://www.linkedin.com/in/antonyjohn-240566211">
+                                    <img class="img-fluid " height="40" width="40" src="D:\project_images\linkedin_image.png"></img>
+                                </a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="row justify-content-center">
+                        <h2>About Me.</h2>
+                    </div>
+                    
+                        <div class="row justify-content-center ">
+                            
+                            <p class=" bio">Hey there, I'm Antony John.</p>
+                            <p class="bio ">I'm a <span id="age"></span> year old passionate coder . 
+                                I have completed my Masters in Computer Apllication from <a href="https://kjcmt.ac.in/">Kristu Jyoti College of Managemaent and  
+                                    Technology ,</a> Kottayam, Kerala.</p>
+                            <p class="bio "> Eager to learn new things and solve problems.<br></p>
+                           
+                        </div>
+                </div>
+            </div>
+            <hr class="yellow"/>
+            <div class="row" style="justify-content: center;">
+               
+                <div class="row center">
+                    <h2 class="col heading text-center">What I've been Coding Lately.</h2>
+                    <div class="row center">
+                        
+                        <div id="repos" class="row center"></div>                 
+                    </div>
+                </div>
+    
+                <br>
+              
+            </div>    
+        </div>
+
+
+    </div>
+    <script>
+       
+             const birthdate = new Date('09/04/1997');
+             const currentdate = new Date();
+             const age = (currentdate.getTime() - birthdate.getTime()) / (1000 * 3600 * 24 * 365);
+             const actualage = Math.floor(age);
+             //console.log("age")
+             document.getElementById('age').innerText = `${actualage}`;
+        // };
+        
+     </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="./github_repo_display.js"></script>
+   
+    <!-- <script src="./codeforcesapi.js"></script> -->
+    <script src="./typewriter.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"></script> -->
+
+
+
+
+  </body>
+</html>
